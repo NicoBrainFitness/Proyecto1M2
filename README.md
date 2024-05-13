@@ -113,4 +113,11 @@ for (let i = 0; i < 8; i++) {
 // Mostrar las encuestas actualizadas
 encuestasYVotos.mostrarEncuestas();
 ```
+## Pantalla de consola con las preguntas creadas:
+<h1> <img src = "https://github.com/NicoBrainFitness/Proyecto1M2/blob/main/Preguntas creadas_consola.png"> "PROYECTO 2: Sistema de Votación en JavaScript"</h1>
+
+## Pantalla de consola con las preguntas votadas:
+<h1> <img src = "https://github.com/NicoBrainFitness/Proyecto1M2/blob/main/Votos realizados_consola.png"> "PROYECTO 2: Sistema de Votación en JavaScript"</h1>
+
+
 Gracias por la oportunidad!!
