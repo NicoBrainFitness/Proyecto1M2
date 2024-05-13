@@ -3,9 +3,9 @@ class Encuesta {
     constructor() {
         this.encuestas = [];
     }
-
+// Definición de la forma de crear la encuesta con dos opciones solamente
     crearEncuesta() {
-        let pregunta = prompt("Ingrese la pregunta de la encuesta (max 8):");
+        let pregunta = prompt("Ingrese una pregunta para la encuesta (max 8):");
         let opciones = [];
 
         for (let i = 0; i < 2; i++) {
@@ -15,7 +15,7 @@ class Encuesta {
         this.encuestas.push({ pregunta: pregunta, opciones: opciones, votos: [0, 0] });
         console.log("Pregunta creada");
     }
-
+// Definición para mostrar la encuesta
     mostrarEncuestas() {
         console.log("Encuestas:");
         this.encuestas.forEach((encuesta, index) => {
@@ -26,7 +26,7 @@ class Encuesta {
             });
         });
     }
-
+// Definición para votar las opciones de pregunta ingresadas
     votar() {
         let preguntaIndex = 0;
         let opcionIndex = 0;
@@ -46,7 +46,7 @@ class Encuesta {
     }
 }
 
-// Almacenar los datos de las encuestas y votos
+// Definición para almacenar los datos de las encuestas y votos
 let encuestasYVotos = {
     encuestas: [],
     agregarEncuesta: function(encuesta) {
@@ -64,24 +64,24 @@ let encuestasYVotos = {
     }
 };
 
+//Definición para ejecución del proceso:
+
 // Crear una nueva encuesta
 let encuesta = new Encuesta();
 
-// Crear 2 encuestas
-for (let i = 0; i < 2; i++) {
+// Crear 8 encuestas
+for (let i = 0; i < 8; i++) {
     encuesta.crearEncuesta();
-    encuestasYVotos1.agregarEncuesta(encuesta.encuestas[i]);
+    encuestasYVotos.agregarEncuesta(encuesta.encuestas[i]);
 }
 
 // Mostrar las encuestas creadas
 encuestasYVotos.mostrarEncuestas();
 
 // Permitir a los usuarios votar
-for (let i = 0; i < 2; i++) {
+for (let i = 0; i < 8; i++) {
     encuesta.votar();
-    encuestasYVotos2.agregarEncuesta(encuesta.votar[i]);
 }
 
 // Mostrar las encuestas actualizadas
-encuestasYVotos1.mostrarEncuestas();
-encuestasYVotos2.mostrarEncuestas();
+encuestasYVotos.mostrarEncuestas();
