@@ -13,7 +13,9 @@ Este proyecto mediante la programación orientada a objetos (POO) permite a los 
 4. Almacenar los datos de las encuestas y los votos en una variable.
 
 ## 1. Permitir a los usuarios crear encuestas con opciones de respuesta (en este caso son solo dos opciones por pregunta)
+```javascript
 // Definición de la clase Encuesta
+
 class Encuesta {
     constructor() {
         this.encuestas = [];
@@ -30,8 +32,9 @@ class Encuesta {
         this.encuestas.push({ pregunta: pregunta, opciones: opciones, votos: [0, 0] });
         console.log("Pregunta creada");
     }
-
+```
 ## 2. Permitir a los usuarios votar en las encuestas.
+```javascript
 // Definición para votar las opciones de pregunta ingresadas
     votar() {
         let preguntaIndex = 0;
@@ -51,8 +54,9 @@ class Encuesta {
         }
     }
 }
-
+```
 ## 3. Mostrar los resultados de las encuestas en tiempo real.
+```javascript
 // Definición para mostrar la encuesta
     mostrarEncuestas() {
         console.log("Encuestas:");
@@ -64,8 +68,9 @@ class Encuesta {
             });
         });
     }
-
+```
 ## 4. Almacenar los datos de las encuestas y los votos en una variable.
+```javascript
 // Definición para almacenar los datos de las encuestas y votos
 let encuestasYVotos = {
     encuestas: [],
@@ -83,8 +88,9 @@ let encuestasYVotos = {
         });
     }
 };
-
+```
 ## 5. Ejecutar el proceso antes descrito:
+```javascript
 //Definición para ejecución del proceso:
 
 // Crear una nueva encuesta
@@ -106,3 +112,5 @@ for (let i = 0; i < 8; i++) {
 
 // Mostrar las encuestas actualizadas
 encuestasYVotos.mostrarEncuestas();
+```
+Gracias por la oportunidad!!
